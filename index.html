@@ -17,26 +17,31 @@
 
         <label>
             Converter <b>de</b>
-            
-            <select>
-                <option>
-                    R$ Real Brasileiro</option>
+
+            <select class="opcoes1">
+                <option value="real"> R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                   
             </select>
         </label>
 
         <label>
             Converter <b>para</b>
-            
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+
+            <select class="opcoes">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="real">R$ Real</option>
             </select>
 
         </label>
 
         <label>
             <b>Valor</b>
-            
+
             <input id="inputResultado" placeholder="R$ 10.000,00">
         </label>
 
@@ -52,18 +57,18 @@
 
             <img class="seta" src="./assets/seta.png" alt="Seta">
 
-            <div  class="convertido">
-                <img src="./assets/dollar.png" alt="moeda-convertida">
-                <p class="p1">Dólar</p>
-                <p  class="valor">US$ 0.0</p>
+            <div class="convertido">
+                <img id="imagemmmm" src="./assets/dollar.png" alt="moeda-convertida">
+                <p id="DolarEuro" class="p1">Dólar americano</p>
+                <p id="resultadoFinal" class="valor">US$ 0.0</p>
             </div>
         </section>
 
     </main>
-    
+
     <img class="logo" src="./assets/gif.gif" alt="GifMoeda">
 
-    <video autoplay Preload src="./assets/fundoConversor.mp4"></video>
+    <video autoplay preload="" src="./assets/fundoConversor.mp4"></video>
 
 </body>
 <script src="./arquivo.js"></script>

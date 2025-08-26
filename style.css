@@ -18,7 +18,7 @@ main {
     margin-top: 196px;
     margin-left: 600px;
     padding: 44px 24px 23px 24px;
-    
+
 
 
 }
@@ -29,10 +29,10 @@ main {
     height: 674px;
     position: relative;
     top: 180px;
-    
+
     margin-right: 301px;
 
-    
+
 
 }
 
@@ -80,35 +80,36 @@ input {
 
 button {
     border-radius: 5px;
-background: #00FF08;
-height: 48px;
-width: 100%;
-font-weight: 700;
-font-size: 18px;
-color: #555;
-border: none;
-margin-bottom: 36px;
-cursor: pointer;
+    background: #00FF08;
+    height: 48px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    color: #555;
+    border: none;
+    margin-bottom: 36px;
+    cursor: pointer;
 }
 
 button:hover {
     opacity: 0.8;
-    
+
 }
 
 button:active {
-    opacity: 0.6;
+    background-color: #532fd3;
+    color: #F4F4F4;
 }
 
 section {
 
-border-radius: 20px;
-border: 1px solid #772FD3;
-width: 100%;
-padding: 12px;
-display: flex;
-flex-direction: column;
-align-items: center;
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -117,7 +118,7 @@ align-items: center;
 }
 
 .convertido {
-   display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
