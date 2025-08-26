@@ -15,6 +15,7 @@ function converterValores() {
     const euroDiaDolar = 1.17
      const euroDiaLibra = 1.16
     const libraDia = 7.2
+    const libraDiaDolar = 1.35
     const resultadoValor = valorInput / dolarDia
     const realDia = 1
     
@@ -48,6 +49,17 @@ if (select1.value == "dolar" && select.value == "euro") {
 
 
     }
+
+     if (select1.value == "dolar" && select.value == "libra") {
+
+        resultado.innerHTML = new Intl.NumberFormat("en-GB", {
+            style: "currency",
+            currency: "GBP"
+        }).format(valorInput / libraDiaDolar)
+
+
+    }
+
 
 
 
