@@ -149,13 +149,24 @@ function converterValores() {
 
     }
 
+    
+    const valor22 = document.querySelector("#valor1")
+
+    valor22.innerHTML = new Intl.NumberFormat("pt-br", {
+        style: "currency",
+        currency: "BRL"
+    }).format(valorInput)
+
+
 }
 
 const imagemBandeira = document.querySelector('#imagemmmm')
 
+
 function trocou() {
 
     const textAlterado = document.querySelector('#DolarEuro')
+    
 
 
     if (select.value == "dolar") {
@@ -173,11 +184,52 @@ function trocou() {
         imagemBandeira.src = './assets/libra.png'
     }
 
+    if (select.value == "real") {
+        textAlterado.innerHTML = "Real"
+        imagemBandeira.src = './assets/BRA.png'
+    }
+
+    
     converterValores()
 }
 
+function trocou2() {
+
+    const imagemBandeira1 = document.querySelector('.imagem1')
+    const textAlterado1 = document.querySelector('#text1')
+   
+
+
+
+if (select1.value == "dolar") {
+        textAlterado1.innerHTML = "Dólar americano"
+        imagemBandeira1.src = './assets/dollar.png'
+        
+    }
+
+    if (select1.value == "euro") {
+        textAlterado1.innerHTML = "Euro"
+        imagemBandeira1.src = './assets/euro.png'
+    }
+
+    if (select1.value == "libra") {
+        textAlterado1.innerHTML = "Libra"
+        imagemBandeira1.src = './assets/libra.png'
+    }
+
+    if (select1.value == "real") {
+        textAlterado1.innerHTML = "Real"
+        imagemBandeira1.src = './assets/BRA.png'
+    }
+
+  
+}
+
+
+
 
 select.addEventListener('change', trocou)
+select1.addEventListener('change', trocou2)
 botaoConverte.addEventListener("click", converterValores)
 
 
